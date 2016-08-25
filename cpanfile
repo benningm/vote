@@ -1,0 +1,2 @@
+#!perl
+requires 'Mojolicious::Lite'

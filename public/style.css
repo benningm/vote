@@ -1,0 +1,48 @@
+
+html,body{
+  background-color: #ffffff;
+  color: #000;
+  font-size: 28px;
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+button {
+  font-size: 64px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+div.a,div.b {
+  font-size: 80px;
+  padding: 50px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+div.a {
+  background-color: #A6E22E;
+}
+
+div.b {
+  background-color: #FD971F;
+}
+
+.outer-container {
+  position : absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.inner-container {
+  display: table-cell;
+  vertical-align: middle;      
+  text-align: center;
+}
+
+#voting-area {
+  display: inline-block;
+  text-align: center;
+}
+
