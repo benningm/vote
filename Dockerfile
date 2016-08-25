@@ -1,8 +1,8 @@
 FROM perl:5.24.0
 MAINTAINER  Markus Benning <ich@markusbenning.de>
 
-COPY ./cpanfile /vote/cpanfile
-WORKDIR /vote
+COPY ./cpanfile /app/cpanfile
+WORKDIR /app
 
 RUN cpanm --notest Carton \
   && carton install \
@@ -11,5 +11,5 @@ RUN cpanm --notest Carton \
 COPY . /app
 
 EXPOSE 3000
-CMD [ "carton",  "exec", "./app", "daemon" ]
+CMD [ "carton",  "exec", "./app.pl", "daemon" ]
 
